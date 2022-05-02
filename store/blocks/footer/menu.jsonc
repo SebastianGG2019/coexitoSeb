@@ -1,6 +1,7 @@
 {
   "vtex.menu@2.x:menu#Products": {
     "props": {
+      "blockClass":"menuItems",
       "orientation": "vertical"
     },
     "children": [
@@ -16,6 +17,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": ["footer-item","footer-tittle"],
       "itemProps": {
         "type": "internal",
         "href": "#",
@@ -31,6 +33,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass":["footer-item"],
       "itemProps": {
         "type": "internal",
         "href": "#",
@@ -46,6 +49,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass":["footer-item"],
       "itemProps": {
         "type": "internal",
         "href": "#",
@@ -60,6 +64,7 @@
       "id": "menu-item-personalization",
       "type": "custom",
       "iconId": null,
+      "blockClass":["footer-item"],
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -73,6 +78,7 @@
 
   "vtex.menu@2.x:menu#footer-decoration": {
     "props": {
+      "blockClass":"menuItems",
       "orientation": "vertical"
     },
     "children": [
@@ -87,6 +93,7 @@
       "id": "menu-item-smartphones",
       "type": "custom",
       "iconId": null,
+      "blockClass":["footer-item"],
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -103,6 +110,7 @@
       "id": "menu-item-videogames",
       "type": "custom",
       "iconId": null,
+      "blockClass":["footer-item"],
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -120,6 +128,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass":["footer-item"],
       "itemProps": {
         "type": "internal",
         "href": "/decoration/tvs",
@@ -132,6 +141,7 @@
 
   "vtex.menu@2.x:menu#footer-bags": {
     "props": {
+      "blockClass":"menuItems",
       "orientation": "vertical"
     },
     "children": [
@@ -147,6 +157,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass":["footer-item","footer-tittle"],
       "itemProps": {
         "type": "internal",
         "href": "/bags/d",
@@ -163,6 +174,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass":["footer-item"],
       "itemProps": {
         "type": "internal",
         "href": "/bags/backpacks",
@@ -178,6 +190,7 @@
       "id": "menu-item-necessaire",
       "type": "custom",
       "iconId": null,
+      "blockClass":["footer-item"],
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -188,9 +201,9 @@
       }
     }
   },
-
   "vtex.menu@2.x:menu#footer-clothing": {
     "props": {
+      "blockClass":"menuItems",
       "orientation": "vertical"
     },
     "children": [
@@ -202,7 +215,6 @@
       "menu-item#cropped"
     ]
   },
-
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
       "orientation": "vertical"
@@ -220,6 +232,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass":["footer-item","footer-tittle"],
       "itemProps": {
         "type": "internal",
         "href": "/clothing/d",
@@ -249,6 +262,7 @@
 
   "menu-item#decoration-mobile": {
     "props": {
+      "blockClass":["footer-item","footer-tittle"],
       "itemProps": {
         "tagTitle": "Decoration",
         "text": "Decoration"
@@ -273,6 +287,7 @@
 
   "menu-item#sale-mobile": {
     "props": {
+      "blockClass":["footer-item","footer-tittle"],
       "itemProps": {
         "tagTitle": "Sale",
         "text": "Sale"
@@ -294,13 +309,13 @@
       "menu-item#tvs"
     ]
   },
-
   "menu-item#clothing": {
     "props": {
       "id": "menu-item-category-clothing",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": ["footer-item","footer-tittle"],
       "itemProps": {
         "type": "internal",
         "href": "/clothing/d",
@@ -315,6 +330,7 @@
     "props": {
       "id": "menu-item-shorts",
       "type": "custom",
+      "blockClass":["footer-item"],
       "iconId": null,
       "highlight": false,
       "itemProps": {
@@ -331,6 +347,7 @@
     "props": {
       "id": "menu-item-tank-tops",
       "type": "custom",
+      "blockClass":["footer-item"],
       "iconId": null,
       "highlight": false,
       "itemProps": {
@@ -348,6 +365,7 @@
       "id": "menu-item-shirts",
       "type": "custom",
       "iconId": null,
+      "blockClass":["footer-item"],
       "highlight": false,
       "itemProps": {
         "type": "internal",
@@ -363,6 +381,7 @@
     "props": {
       "id": "menu-item-sweat-shirts",
       "type": "custom",
+      "blockClass":["footer-item"],
       "iconId": null,
       "highlight": false,
       "itemProps": {
@@ -379,6 +398,7 @@
     "props": {
       "id": "menu-item-cropped",
       "type": "custom",
+      "blockClass":["footer-item"],
       "iconId": null,
       "highlight": false,
       "itemProps": {

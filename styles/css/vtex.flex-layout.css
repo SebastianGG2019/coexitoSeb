@@ -2,7 +2,9 @@
 .flexRowContent--main-header {
   padding: 0 0.5rem;
 }
-
+.flexCol--homeContainer  {
+  padding: 0 0px 0 6% ;
+}
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -16,15 +18,30 @@
   }
 }
 
-
+.flexRow--containerHome :global(.vtex-store-components-3-x-container){
+  margin: 0 ;
+  max-width: 100%;
+  width: 100%;
+}
+.flexCol--imagenesCategorias  {
+  margin: 10px 20px 10px 0;
+}
+.flexRow--sliderRowCategorias{
+  padding: 20px 40px;
+}
+.flexRow--vitrinadestacada1{
+  padding: 0 120px;
+}
 /*---------------------------------------------*/
 /*       Aside izquierdo - menú lateral       */
 /*-------------------------------------------*/
 .flexRowContent--menu-link {
-  background-color: #dadada;
+  background-color: #182841;
   color: black;
 }
-
+.flexRow--Submenu{
+  width: 100%;
+}
 .flexRowContent--menu-link {
   position: fixed;
   left: 0%;
@@ -33,16 +50,24 @@
   margin-top: -15px;
   z-index: 2;
 }
+.flexCol--Submenu-item  {
+  width: 97% !important;
+  background: white ;
+}
 /*>>>>>>>>>>>>>>>>Cierre Flechas de slider*/
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: white;
+  align-items: center;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
   background-color: #f0f0f0;
+}
+.flexRow--main-header{
+  border-bottom: 6px solid #182841;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -122,7 +147,197 @@
 /*         Porcentaje footer1        */
 /*----------------------------------*/
 .flexRowContent--menu-row {
-  width: 90%;
+  width: 84%;
   margin-left: 10%;
 }
+.flexRow--payment-methods{
+  width: 100%;
+  padding-left: 10%;
+}
+.flexRow--credits{
+  width: 100%;
+  padding: 0px 10%;
+  background: #182841 ;
+  margin-top: 40px;
+}
+.flexRowContent--logoFooter {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.flexCol--column-newsletter  {
+  padding-left: 80px;
+}
+.flexRowContent--payment-methods {
+  margin-top: 25px;
+}
 /*>>>>>>>>>Cierre Flechas de slider*/
+/* Product column */
+.flexCol--productContainer  {
+  padding: 0 30px 0 120px;
+}
+
+/* Precios */
+.flexRowContent--precio{
+  justify-content: center;
+  align-items: center;
+}
+.flexCol--productRating  {
+  display: none;
+}
+/*Vitrinas  */
+.flexRowContent--indentifierProduct {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  align-items: center;
+  padding: 13px 0;
+  margin-top: 10px;
+}
+.flexRow--indentifierProduct{
+  margin-bottom: 10px;
+}
+.flexRow--selectorProduct :global(.vtex-product-quantity-1-x-quantitySelectorTitle){
+  text-align: center;
+}
+
+
+/* Heqader ajuste */
+.flexCol--minicart.flexCol--headerItem  {
+  margin-right: 20px;
+}
+.flexRow--main-header-mobile-sticky{
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.flexRowContent--main-header-mobile-sticky {
+  justify-content: center;
+}
+.flexCol--itemsSticky  {
+  height: 54px;
+  align-items: center;
+  padding: 10px 19px;
+}
+
+.flexCol--bannerSegContainer{
+  padding: 0 65px;
+  margin: 20px 0;
+}
+.flexRow--bannerSegContainer{
+  margin: 30px 0;
+}
+.flexColChild--bannerSegContainer .flexRowContent{
+  height: 330px;
+}
+.flexColChild--bannerSegContainer .stretchChildrenWidth{
+  padding: 0 10px;
+}
+.flexCol--cotizarButton  {
+  background: #575757;
+}
+
+/* estilos menu */
+.flexRowContent--Submenu {
+  flex-wrap: wrap;
+}
+.flexColChild--subMenu-container {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  width: 98%;
+  margin: 5px 2px;
+  height: 56px !important;
+  background: white;
+}
+/* estilos del login */
+.flexRowContent--contenedorForm {
+  padding: 40px 30px 40px 120px;
+}
+
+.flexRowContent--formRegistroInputs .stretchChildrenWidth{
+  width: 46%!important;
+  margin-bottom: 20px;
+  margin-right: 21px;
+}
+.flexRowContent--formRegistroInputs .stretchChildrenWidth:last-child{
+  width: 100% !important;
+  margin-bottom: 20px;
+}
+.flexRowContent--formRegistroInputs{
+  flex-wrap: wrap;
+}
+/* estilos para el slider de categorias */
+.flexRow--sliderRowCategorias {
+  background: white;
+}
+.flexCol--imagenesCategorias:hover :global(.vtex-rich-text-0-x-container--categoria-titulo){
+  opacity: 0;
+}
+.flexCol--imagenesCategorias:hover :global(.vtex-rich-text-0-x-container--categoria-titulo){
+  opacity: 0;
+}
+.flexCol--imagenesCategorias:hover :global(.vtex-store-components-3-x-imageElement--img-category-salider-item){
+  filter: brightness(0.5);
+  filter: blur(1px);
+}
+.flexCol--imagenesCategorias:hover :global(.vtex-store-components-3-x-imageElementLink--img-category-salider-item)::before{
+  opacity: 1;
+}
+.flexCol--imagenesCategorias:hover :global(.vtex-store-components-3-x-imageElementLink--img-slider-category-hover){
+  opacity: 1;
+  visibility: visible;
+}
+/* Estilos Mobile */
+
+@media (max-width: 600px) {
+  .flexRow--payment-methods {
+    margin-left: 0;
+    width: 100%;
+  }
+  .flexCol--column-newsletter  {
+    padding: 10px;
+  }
+  .flexCol--homeContainer  {
+    padding: 0;
+  }
+  .flexCol--bannerSegContainer  {
+    padding: 0;
+  }
+  .flexColChild--bannerSegContainer .flexRowContent{
+    display: flex;
+  }
+  /* footer estilos */
+  .flexRow--payment-methods{
+    padding: 0 10px;
+  }
+  .flexRowContent--payment-methods {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  /* banner segmentado home */
+  .flexCol--bannerSegContainer .flexColChild--bannerSegContainer:first-child .stretchChildrenWidth {
+    width: 50% !important;
+  }
+  /* menu estilos */
+  .flexRowContent--subMneusM {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexRowContent--subMneusM .stretchChildrenWidth{
+    width: 31.3%!important;
+    margin-left: 8px;
+  }
+  .flexRowContent--post-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexRowContent--post-menu .stretchChildrenWidth{
+    width: 50% !important;
+  }
+  .flexRow--post-menu{
+    position: absolute;
+    width: 100%;
+  }
+}

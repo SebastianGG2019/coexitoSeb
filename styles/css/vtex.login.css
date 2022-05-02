@@ -1,3 +1,47 @@
-.label :global(.vtex-login-2-x-label) {
+.label  {
   text-transform: capitalize;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #808080;
+  font-size: 10px;
+}
+.label:hover {
+  text-decoration: underline;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--headerItem) .container :global(.vtex-button):hover{
+  background: transparent;
+}
+.container :global(.vtex-button__label ){
+  padding: 0 19px 0 22px !important;
+  border-right: 2px solid #004D9D;
+}
+.label::before  {
+  content: "";
+  background: url(https://coexitob2b.vtexassets.com/arquivos/userBllueCoexito.png) no-repeat;
+  background-size: 100%;
+  font-size: 10px;
+  display: block;
+  width: 18px;
+  height: 21px;
+  margin-top: 0;
+  transition: all 40ms;
+  margin-right: 5px;
+}
+.loginOptionsContainer{
+  display: none;
+}
+@media (max-width: 600px) {
+  .label  {
+    font-size: 0;
+    padding: 0;
+  }
+  .label::before{
+    width: 25px;
+    height: 56px;
+  }
+  .container :global(.vtex-button__label ){
+    padding: 0 5px !important;
+    border-right: 0;
+  }
 }

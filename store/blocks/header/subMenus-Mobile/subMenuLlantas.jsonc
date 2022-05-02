@@ -1,0 +1,62 @@
+{
+    // trigger para activar el menu
+    "disclosure-layout#llantas-submenu-m-lvl2": {
+        "children": ["disclosure-trigger#menu-llantasM-lvl2","disclosure-content#menu-llantasM-lvl2"],
+        "props": {
+            "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-llantasM-lvl2": {
+        "children": ["menu-item#category-pricipal-llantasM"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-llantasM-lvl2-2": {
+        "children": ["menu-item#category-pricipal-llantasM-2"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-llantasM-lvl2": {
+        "children": ["disclosure-trigger#menu-llantasM-lvl2-2","flex-layout.row#menullantasFila1"],
+        "props": {
+            "blockClass": "subMneusMContent"
+        }
+    },
+
+    // trigger sub menu llantasM ---------------------------
+    "menu-item#category-pricipal-llantasM": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Llantas",
+            "text": "Llantas"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-llantasM-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Llantas",
+            "text": "< Llantas"
+            }
+        }
+    }
+}

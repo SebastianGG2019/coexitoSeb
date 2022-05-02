@@ -1,19 +1,42 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link"
-    ]
+      "flex-layout.row#homeContainer"
+    ],
+    "props":{
+      "blockClass":"home"
+    },
+    "parent": {
+        "challenge": "challenge.trade-policy-condition"
+    }
   },
-
+  "flex-layout.row#homeContainer": {
+    "children": ["flex-layout.col#homeContainer"],
+    "props":{
+      "blockClass":"containerHome"
+    }
+  },
+  "flex-layout.col#homeContainer": {
+    "children": [
+      "list-context.image-list#demo",
+      "rich-text#shelf-categorias",
+      "flex-layout.row#sliderCategorias",
+      "rich-text#shelf-title",
+      "tab-layout#tabsCatego",
+      "slider-layout#bannersDos",
+      "rich-text#shelf-title2",
+      "list-context.product-list#vitrina2",
+      "responsive-layout.desktop#segmentar",
+      "responsive-layout.phone",
+      "rich-text#shelf-combosVtirine",
+      "responsive-layout.desktop#vitrinaTres",
+      "rich-text#TituloVitrinaDoble",
+      "list-context.product-list#vitrinadoble-1"
+    ],
+    "props": {
+      "blockClass": "homeContainer"
+    }
+  },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
@@ -43,60 +66,67 @@
     }
   },
 
-  "rich-text#shelf-title": {
+  "rich-text#shelf-title2": {
     "props": {
-      "text": "## Summer",
+      "text": "## DESTACADO DE MARCAS",
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
+  "list-context.product-list#vitrina2": {
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
+    "children": ["slider-layout#demo-vitrina2"]
   },
-  "slider-layout#demo-products": {
+  "slider-layout#demo-vitrina2": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
       "fullWidth": false,
-      "blockClass": "shelf"
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "desktopOnly"
     }
   },
-
-  "info-card#home": {
+  "rich-text#TituloVitrinaDoble": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "text": "## MÁS RESPUESTOS INFALTABLES",
+      "blockClass": "shelfTitle"
     }
   },
-
-  "rich-text#question": {
+  "list-context.product-list#vitrinadoble-1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-vitrinadoble-1","slider-layout#demo-vitrinadoble-2"]
+  },
+  "slider-layout#demo-vitrinadoble-1": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "desktopOnly"
     }
   },
-
-  "rich-text#link": {
+  "slider-layout#demo-vitrinadoble-2": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "desktopOnly"
     }
-  }
+  } 
+
 }

@@ -1,0 +1,38 @@
+.confirmationIconWrapper {
+    display: none;
+}
+.section--notices {
+    display: none;
+}
+.section--bank-invoice {
+    display: none;
+}
+.orderOptionsWrapper {
+    display: none;
+}
+.productList {
+    display:none;
+}
+.orderSoldBy {
+    display: none;
+}
+.section--paymentMethods {
+    width: 100%;
+    background: #F3F3F3;
+    border-radius: 5px;
+    padding: 20px;
+    border: 0;
+}
+.package--delivery {
+    margin: 0;
+}
+.section--productList .productList {
+    display: block;
+}
+.section--productList .packageHeaderColumn{
+    display: none;
+}
+.section--productList {
+    margin: 30px 0;
+    border: 0;
+}

@@ -1,0 +1,97 @@
+{
+  // VITRINA TRES PRODUCTOS
+  "rich-text#shelf-combosVtirine": {
+      "props": {
+        "text": "## COMBOS DEL MES",
+        "blockClass": ["shelfTitle","combo-mes"]
+      }
+  },
+  "responsive-layout.desktop#vitrinaTres": {
+    "children": ["flex-layout.row#vitrinasTres"]
+  },
+
+  "flex-layout.row#vitrinasTres": {
+    "children": [
+      "flex-layout.col#vitrina1",
+      "flex-layout.col#vitrina2"
+    ],
+    "props": {
+      "blockClass": "vitrinadestacada1"
+    }
+  },
+  "flex-layout.col#vitrina1": {
+    "children": [
+      "list-context.product-list#vitrineDest3"
+    ],
+    "props": {
+      "paddingLeft": "20px",
+      "width":"30%",
+      "blockClass": "column2vitrinaDestacado2"
+    }
+  },
+  "list-context.product-list#vitrineDest3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-vitrine-dest"]
+  },
+  "slider-layout#demo-vitrine-dest": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": ["shelf","vitrinaGigante"],
+      "showPaginationDots":"false",
+      "showNavigationArrows": "never"
+    }
+  },
+  "flex-layout.col#vitrina2": {
+    "children": [
+      "list-context.product-list#vitrineDest3-2",
+      "list-context.product-list#vitrineDest3-3"
+    ],
+    "props": {
+      "paddingLeft": "20px",
+      "width":"70%",
+      "blockClass": "column2vitrinaDestacado2"
+    }
+  },
+  "list-context.product-list#vitrineDest3-2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-vitrine-dest-2"]
+  },
+  "slider-layout#demo-vitrine-dest-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "nerver"
+    }
+  },
+  "list-context.product-list#vitrineDest3-3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-vitrine-dest-3"]
+  },
+  "slider-layout#demo-vitrine-dest-3": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "never"
+    }
+  }
+}

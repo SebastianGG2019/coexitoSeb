@@ -54,8 +54,8 @@
 }
 
 .listPrice--summary {
-  margin-bottom: 0.25rem;
   font-size: .875rem;
+  margin-bottom: 0;
 }
 
 .installments--summary {
@@ -76,4 +76,13 @@
   vertical-align: baseline;
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+.installments--summary{
+  display: none;
+}
+.currencyDecimal--summary {
+  display: none;
+}
+.currencyFraction--summary{
+  display: none;
 }

@@ -1,0 +1,62 @@
+{
+    // trigger para activar el menu
+    "disclosure-layout#baterias-submenu-m-lvl2": {
+        "children": ["disclosure-trigger#menu-bateriasM-lvl2","disclosure-content#menu-bateriasM-lvl2"],
+        "props": {
+            "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-bateriasM-lvl2": {
+        "children": ["menu-item#category-pricipal-bateriasM"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-bateriasM-lvl2-2": {
+        "children": ["menu-item#category-pricipal-bateriasM-2"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-bateriasM-lvl2": {
+        "children": ["disclosure-trigger#menu-bateriasM-lvl2-2","flex-layout.row#menuBateriasFila1"],
+        "props": {
+            "blockClass": "subMneusMContent"
+        }
+    },
+
+    // trigger sub menu bateriasM ---------------------------
+    "menu-item#category-pricipal-bateriasM": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Baterias",
+            "text": "Baterias"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-bateriasM-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Baterias",
+            "text": "< Baterias"
+            }
+        }
+    }
+}

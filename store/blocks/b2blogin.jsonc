@@ -1,0 +1,25 @@
+{
+    "store.custom#loginb2b-1": {
+        "blocks": [ 
+            "flex-layout.row#form"
+        ]
+    },
+    "rich-text#shelf-title2-1": {
+        "props": {
+          "text": "Solicita tu registro y disfruta de nuestro portafolio de producto",
+          "blockClass": "titulosForm"
+        }
+    },
+    "rich-text#shelf-titleInicio": {
+        "props": {
+          "text": "Bienvenido a coexito mayorista",
+          "blockClass": "titulosForm"
+        }
+    },
+    "login-content":{
+        "props":{
+            "defaultOption": 1
+        }
+    }
+
+}

@@ -32,3 +32,29 @@
 .flexCol--summaryUpDetailsListMobile {
   margin-bottom: 0.25rem
 }
+.flexCol--filtroContent {
+  width: 30%;
+  background: white;
+  padding: 60px 30px 10px 30px;
+}
+.flexRowContent--rowButtonsProduct .stretchChildrenWidth:first-child{
+  width: 80% !important;
+}
+.flexRowContent--rowButtonsProduct .stretchChildrenWidth:last-child{
+  width: 20% !important;
+}
+/* ROW SEARCH INFO */
+.flexRowContent--rowSearchInfo .stretchChildrenWidth:first-child{
+  justify-content: flex-start;
+}
+
+/* Estilos vitrina final */
+.flexRow--row-vitrine-category {
+  margin-top: 20px;
+}
+
+.flexCol--tabContent  {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}

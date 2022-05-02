@@ -1,19 +1,28 @@
 {
   "store.product": {
     "children": [
+      "flex-layout.row#productContainer"
+    ],
+    "props":{
+      "blockClass":"containerProduct"
+    }
+  },
+  "flex-layout.row#productContainer": {
+    "children": ["flex-layout.col#productContainer"]
+  },
+  "flex-layout.col#productContainer": {
+    "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "flex-layout.row#description",
-      "flex-layout.row#specifications-title",
-      "product-specification-group#table",
+      "tab-layout#product",
       "shelf.relatedProducts",
-      "product-reviews",
+      "flex-layout.row#productReviews",
       "product-questions-and-answers"
-    ]
-  },
-  "flex-layout.row#specifications-title": {
-    "children": ["rich-text#specifications"]
-  },
+    ],
+    "props": {
+      "blockClass": "productContainer"
+  }
+},
   "rich-text#specifications": {
     "props": {
       "text": "##### Product Specifications"
@@ -64,7 +73,12 @@
       "product-specification-badges"
     ]
   },
-
+  "image#imagenproduct": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/productBar.png",
+      "blockClass": "imgCategoriaSlider"
+    }
+  },
   "product-specification-badges": {
     "props": {
       "specificationGroupName": "Group",
@@ -75,7 +89,7 @@
   },
 
   "flex-layout.col#stack": {
-    "children": ["stack-layout"],
+    "children": ["stack-layout", "image#imagenproduct"],
     "props": {
       "width": "60%",
       "rowGap": 0
@@ -86,34 +100,35 @@
   },
   "product-images": {
     "props": {
+      "thumbnailsOrientation":"horizontal",
       "aspectRatio": {
         "desktop": "auto",
         "phone": "16:9"
       },
-      "displayThumbnailsArrows": true
+      "displayThumbnailsArrows": true,
+      "showPaginationDots":false,
+      "showNavigationArrows": true
     }
   },
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0
+      "rowGap": 0,
+      "blockClass":"productRightColumn"
     },
     "children": [
       "flex-layout.row#product-name",
+      "product-identifier.product",
       "product-rating-summary",
+      "flex-layout.row#description",
+      "product-availability",
+      "sku-selector",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      "product-installments",
-      "product-separator",
-      "product-identifier.product",
-      "sku-selector",
-      "product-quantity",
-      "product-assembly-options",
-      "product-gifts",
-      "flex-layout.row#buy-button",
-      "availability-subscriber",
       "shipping-simulator",
-      "share#default"
+      "product-separator",
+      "product-assembly-options",
+      "flex-layout.row#buy-button"
     ]
   },
 
@@ -130,15 +145,49 @@
       "showValueNameForImageVariation": true
     }
   },
-
+  "product-availability": {
+    "props": {
+      "threshold": 10,
+      "lowStockMessage": "Disponibilidad: {quantity}",
+      "highStockMessage": "Disponibilidad: {quantity}"
+    }
+  },
   "flex-layout.row#buy-button": {
     "props": {
-      "marginTop": 4,
-      "marginBottom": 7
+      "blockClass":"rowButtonsProduct-1"
     },
-    "children": ["add-to-cart-button"]
+    "children": ["flex-layout.col#cotizarButton","add-to-cart-button","flex-layout.col#whastAppButton"]
   },
-
+  "flex-layout.col#whastAppButton": {
+    "props": {
+      "width":"20%",
+      "blockClass": "whastApp"
+    },
+    "children": [
+      "rich-text#whastAppButton"
+    ]
+  },
+  "rich-text#whastAppButton": {
+    "props": {
+      "blockClass":"whatsApp",
+      "text": "whatsApp"
+    }
+  },
+  "flex-layout.col#cotizarButton": {
+    "props": {
+      "width":"40%",
+      "blockClass": "cotizarButton"
+    },
+    "children": [
+      "rich-text#cotizarButton"
+    ]
+  },
+  "rich-text#cotizarButton": {
+    "props": {
+      "blockClass":"cotizarButton",
+      "text": "Cotizar"
+    }
+  },
   "flex-layout.row#product-availability": {
     "props": {
       "colGap": 7,
@@ -169,16 +218,5 @@
       "blockClass": "message-availability"
     },
     "children": ["availability-subscriber"]
-  },
-
-  "share#default": {
-    "props": {
-      "social": {
-        "Facebook": true,
-        "WhatsApp": true,
-        "Twitter": false,
-        "Pinterest": true
-      }
-    }
   }
 }

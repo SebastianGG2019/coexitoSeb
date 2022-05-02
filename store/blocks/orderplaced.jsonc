@@ -50,13 +50,18 @@
     "children": [
       "flex-layout.row#order-header",
       "op-order-split-notice",
-      "op-order-customer",
-      "op-section#payments",
+      "flex-layout.row#row1",
       "op-section#pickup-packages",
-      "op-section#delivery-packages",
       "op-order-takeaway-packages",
-      "op-order-total"
+      "op-section#delivery-packages#2"
     ]
+  },
+  "op-section#delivery-packages#2": {
+    "props": {
+      "name": "deliveryPackages",
+      "blockClass":"productList"
+    },
+    "children": ["op-order-delivery-packages"]
   },
   // each order header
   "flex-layout.row#order-header": {
@@ -69,6 +74,20 @@
     "children": [
       "flex-layout.col#order-header-info",
       "flex-layout.col#order-header-options"
+    ]
+  },
+  "flex-layout.row#row1": {
+    "props": {
+      "fullWidth": true,
+      "colSizing": "auto",
+      "colGap": 5,
+      "marginBottom": 5,
+      "blockClass": "rowDelivery"
+    },
+    "children": [
+      "op-order-customer",
+      "op-section#delivery-packages",
+      "op-section#payments"
     ]
   },
   "flex-layout.col#order-header-info": {

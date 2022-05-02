@@ -17,10 +17,132 @@
 
 .menuContainer {
   display: block;
+  background: white;
 }
-
+.menuContainer--vertical-menu {
+  background: #182841;
+  height: 100%;
+  width: 100%;
+}
+.menuContainer--vertical-menu .styledLinkContent--vertical{
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+  margin-top: 0;
+}
+.menuContainerNav--vertical-menu{
+  width: 90%;
+}
+.styledLink--vertical::before {
+  content: "";
+  background-size: 90% !important;
+  background-position: center;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 15px auto;
+}
+.styledLink--vertical.styledLink--inicio::before {
+  background: url(/arquivos/casaIcon.png) no-repeat;
+}
+.styledLink--vertical.styledLink--baterias::before {
+  background: url(/arquivos/bateriasIcon.png) no-repeat;
+}
+.styledLink--vertical.styledLink--llantas::before {
+  background: url(/arquivos/llantasIcon.png) no-repeat;
+}
+.styledLink--vertical.styledLink--lubricantes::before {
+  background: url(/arquivos/lubricantesIcon.png) no-repeat;
+}
+.styledLink--vertical.styledLink--autopartes::before {
+  background: url(/arquivos/AutoPartesIcon.png) no-repeat;
+}
+.styledLink--vertical.styledLink--motopartes::before {
+  background: url(/arquivos/MotopartesIcon.png) no-repeat;
+}
 .menuItem--vertical {
-  border-bottom: 2px solid #7e7e7e;
+  border-bottom: 3px solid white;
 }
 /*>>>>>Cierre Menú vertical para aside izq*/
+/* Estilos para el footer menu items */
+.menuItem--footer-item .styledLinkContent{
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 100;
+}
+.menuItem--footer-item .styledLinkContent.styledLinkContent--footer-tittle{
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+} 
+.menuContainer--menuItems {
+  background: transparent;
+}
+.styledLinkContent--footer-item {
+  color: white;
+}
+/*  */
 
+@media (max-width: 600px) {
+  .menuItem--footer-item .styledLinkContent.styledLinkContent--footer-tittle{
+    padding: 14px 10px;
+    margin-bottom: 18px;
+    border: 2px solid white;
+  } 
+  .styledLinkContainer--footer-tittle{
+    margin: 0 10px;
+  }
+  .accordionIcon--footer-item {
+    font-size: 17px;
+    margin-right: 17px;
+    color: #ED6B10;
+    display: block;
+    width: 23px;
+    border-radius: 50%;
+    padding: 2px 6.6px;
+    height: 23px;
+    background: white;
+  }
+  .openIconContainer--headerItem :global(.vtex-button )::after{
+    font-size: 0 !important;
+  }
+  .menuContainerNav--menuM {
+    width: 100%;
+  }
+  :global(.vtex-store-drawer-0-x-drawer){
+    width: 100% !important;
+  }
+}
+
+
+/* estilos del despliegue del menu */
+.submenuContainer--Submenu .submenuWrapper--isOpen {
+  position: fixed;
+  left: 101px;
+  width: 23%;
+  height: 90%;
+  bottom: 0;
+}
+.submenuWrapper--Submenu--isOpen {
+  height: 100%;
+  background: #E7E7E7;
+}
+.styledLinkContent--menu-lv2 {
+  justify-content: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 2.4rem 0;
+}
+.styledLinkContent--menu-item-levl2 {
+  margin: 10px 0;
+  font-size: 13px;
+  color: #D3D3D3;
+}
+.styledLinkContent--cierreSubMneu {
+  margin: 20px 0;
+  font-size: 18px;
+}
+.menuContainer--Submenu {
+  background: transparent;
+}

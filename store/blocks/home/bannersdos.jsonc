@@ -1,0 +1,38 @@
+{
+    "slider-layout#bannersDos": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 2,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "blockClass": "sliderBanners",
+          "showPaginationDots":"true",
+          "showNavigationArrows": "desktopOnly"
+        },
+        "children": [
+            "image#bannerdos-1",
+            "image#bannerdos-2",
+            "image#bannerdos-1"
+        ]
+    },
+    "image#bannerdos-1": {
+        "props": {
+          "src": "https://coexitob2b.vtexassets.com/arquivos/banner2-1.png",
+          "blockClass": "imgCategoriaSlider",
+          "link":{
+              "url":"/"
+          }
+        }
+    },
+    "image#bannerdos-2": {
+        "props": {
+          "src": "https://coexitob2b.vtexassets.com/arquivos/banner2.png",
+          "blockClass": "imgCategoriaSlider",
+          "link":{
+              "url":"/"
+          }
+        }
+    }
+}

@@ -3,12 +3,19 @@
   color: #3F3F40;
   padding: 0.375rem 0.75rem 0.375rem 0.75rem;
 }
-
+.searchResultContainer {
+  padding: 0 20px 0 130px;
+}
 .galleryLayoutOptionButton--selected {
   background-color: #3F3F40;
   color: #FFFFFF;
 }
-
+.gallery--grid {
+  padding-left: 0;
+}
+.orderByText {
+  display: none;
+}
 .galleryLayoutSwitcher {
   border-radius: 4px 4px 4px 4px;
   justify-content: center;
@@ -19,4 +26,27 @@
 
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
+}
+.galleryTitle--layout {
+  margin-top: 0;
+}
+.galleryItem--grid {
+  max-width: 25% !important;
+}
+.notFound--layout {
+  padding: 0 30px 0 120px;
+}
+.notFound--layout :global(.vtex-breadcrumb-1-x-container){
+  display: none;
+}
+@media (max-width: 600px) {
+  .searchResultContainer {
+    padding: 0 10px;
+  }
+  .galleryItem--grid {
+    max-width: 50%!important;
+  }
+  .notFound--layout {
+    padding: 0 10px;
+  }
 }

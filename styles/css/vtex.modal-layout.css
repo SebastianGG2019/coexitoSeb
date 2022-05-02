@@ -34,6 +34,20 @@
   min-width: 320px;
   max-width: 96rem;
 }
+:global(.vtex-store-icons-0-x-expandIcon) {
+  display: none;
+}
+.triggerContainer--quickview {
+  padding: 0 !important;
+}
+.triggerContainer--quickview::before {
+  content: "";
+  background: url(/arquivos/akar-icons_eye.png);
+  background-size: cover;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
 
 .headerContainer--quickview {
   border: none;
